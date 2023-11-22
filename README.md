@@ -30,4 +30,8 @@ The marp theme files I'm using commonly.
 
 You can set the style same as h1 tag.
 
+```markdown
+<div class="h1">Test</div>
+```
+
 ![div_h1_class](screenshots/div-h1-class.png)
