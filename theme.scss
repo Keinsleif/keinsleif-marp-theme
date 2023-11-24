@@ -1,23 +1,23 @@
 @use 'sass:color';
 
-/*!
- * Marp / Marpit Gaia theme.
+/*
+ * Marp / Marpit theme.
  *
- * @theme gaia
- * @author Yuki Hattori
+ * @theme keinsleif
+ * @author Keinsleif
  *
  * @auto-scaling true
  * @size 16:9 1280px 720px
  * @size 4:3 960px 720px
  */
 
-$color-light: #fff8e1;
+$color-light: #ffffff;
 $color-dark: #455a64;
 $color-primary: #0288d1;
 $color-secondary: #81d4fa;
 
 @import 'https://fonts.bunny.net/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap';
-@import '~highlight.js/styles/sunburst';
+// @import '~highlight.js/styles/sunburst';
 
 @mixin color-scheme($bg, $text, $highlight) {
   --color-background: #{$bg};
@@ -249,7 +249,9 @@ section {
   }
 
   table {
-    th,
+    th {
+      border-color: var(--color-background);
+    }
     td {
       border-color: var(--color-foreground);
     }
@@ -257,6 +259,10 @@ section {
     thead th {
       background: var(--color-foreground);
       color: var(--color-background);
+    }
+
+    thead > tr:not(tr:has(th:not(th:empty))) {
+      display: none;
     }
 
     tbody > tr:nth-child(odd) {
