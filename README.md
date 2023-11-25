@@ -15,17 +15,21 @@ The marp theme files I'm using commonly.
 ```
 
 - gaia  
+
 ![table_header_hide_gaia](screenshots/table-header1-gaia.png)
 
 - This theme  
+
 ![table_header_hide_keinsleif](screenshots/table-header1-keinsleif.png)
 
 ### Change the color of table header
 
 - gaia  
+
 ![table_header_color_gaia](screenshots/table-header2-gaia.png)
 
 - This theme  
+
 ![table_header_color_keinsleif](screenshots/table-header2-keinsleif.png)
 
 ### Add ".h1" div style class
