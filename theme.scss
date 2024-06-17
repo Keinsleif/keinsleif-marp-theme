@@ -331,6 +331,12 @@ section {
   }
 }
 
+section.vcenter {
+  display: grid;
+  justify-items: start;
+  align-content: center;
+}
+
 section.center {
   display: grid;
   justify-items: center;
