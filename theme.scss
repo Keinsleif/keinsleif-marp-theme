@@ -19,6 +19,9 @@ $color-secondary: #81d4fa;
 @import 'https://fonts.bunny.net/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap';
 // @import '~highlight.js/styles/sunburst';
 
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
 @mixin color-scheme($bg, $text, $highlight) {
   --color-background: #{$bg};
   --color-background-stripe: #{rgba($text, 0.1)};
