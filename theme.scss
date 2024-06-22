@@ -78,10 +78,10 @@ blockquote {
 
 ul,
 ol {
-  > li {
+  >li {
     margin: 0.3em 0 0;
 
-    > p {
+    >p {
       margin: 0.6em 0 0;
     }
   }
@@ -140,7 +140,7 @@ blockquote {
     transform: rotate(180deg);
   }
 
-  > *:first-child {
+  >*:first-child {
     margin-top: 0;
   }
 }
@@ -188,13 +188,11 @@ footer {
 
 section {
   background-color: var(--color-background);
-  background-image: linear-gradient(
-    135deg,
-    rgba(#888, 0),
-    rgba(#888, 0.02) 50%,
-    rgba(#fff, 0) 50%,
-    rgba(#fff, 0.05)
-  );
+  background-image: linear-gradient(135deg,
+      rgba(#888, 0),
+      rgba(#888, 0.02) 50%,
+      rgba(#fff, 0) 50%,
+      rgba(#fff, 0.05));
   color: var(--color-foreground);
   font-size: 35px;
   font-family: Lato, 'Avenir Next', Avenir, 'Trebuchet MS', 'Segoe UI',
@@ -239,7 +237,7 @@ section {
     background: var(--color-foreground);
   }
 
-  pre > code {
+  pre>code {
     background: transparent;
   }
 
@@ -255,6 +253,7 @@ section {
     th {
       border-color: var(--color-background);
     }
+
     td {
       border-color: var(--color-foreground);
     }
@@ -264,11 +263,12 @@ section {
       color: var(--color-background);
     }
 
-    thead > tr:not(tr:has(th:not(th:empty))) {
+    thead>tr:not(tr:has(th:not(th:empty))) {
       display: none;
     }
 
-    tbody > tr:nth-child(odd) {
+    tbody>tr:nth-child(odd) {
+
       td,
       th {
         background: var(--color-background-stripe, transparent);
@@ -276,8 +276,8 @@ section {
     }
   }
 
-  > *:first-child,
-  > header:first-child + * {
+  >*:first-child,
+  >header:first-child+* {
     margin-top: 0;
   }
 
@@ -309,20 +309,21 @@ section {
     }
 
     blockquote {
-      > h1,
-      > h2,
-      > h3,
-      > h4,
-      > h5,
-      > h6,
-      > p {
+
+      >h1,
+      >h2,
+      >h3,
+      >h4,
+      >h5,
+      >h6,
+      >p {
         text-align: left;
       }
     }
 
     ul,
     ol {
-      > li > p {
+      >li>p {
         text-align: left;
       }
     }
@@ -332,16 +333,16 @@ section {
       margin-right: auto;
     }
   }
-}
 
-section.vcenter {
-  display: grid;
-  justify-items: start;
-  align-content: center;
-}
+  .vcenter {
+    display: grid;
+    justify-items: start;
+    align-content: center;
+  }
 
-section.center {
-  display: grid;
-  justify-items: center;
-  align-content: center;
+  .center {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
 }
