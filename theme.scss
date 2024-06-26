@@ -233,7 +233,7 @@ section {
     }
   }
 
-  pre {
+  pre:not(pre:has(code.language-mermaid)) {
     background: var(--color-foreground);
   }
 
